@@ -1,0 +1,168 @@
+:root {
+    --text-dark: rgba(67, 67, 67, 1);
+}
+
+body {
+    font-family: Inter, sans-serif;
+    color: var(--text-dark);
+    background-image: url("assets/bg.jpg");
+    background-size: cover;
+    background-position: center 80%;
+    background-attachment: fixed;
+}
+
+.hero{
+    height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+}
+
+.hero-logo{
+    height: 180px;
+}
+
+.download-btn{
+    display: inline-flex;
+    align-items: center;
+    gap: 20px;
+    background-image: url("assets/green-texture.jpg");
+    background-size: cover;
+    background-position: center;
+    padding: 20px 70px;
+    border-radius: 35px;
+    text-decoration: none;
+    box-shadow: darkslategrey 2px 2px 5px;
+    color: rgba(67, 67, 67, 1);
+    font-weight: bolder;
+    font-size: 20px;
+    margin-top: 10px;
+    transition: all 0.2s ease;
+}
+
+.download-btn:hover{
+    background-image:
+            linear-gradient(rgba(255,255,255,0.2), rgba(255,255,255,0.2)),
+            url("assets/dark-green-texture.jpg");
+    transform: translateY(-2px);
+}
+
+.download-btn:active{
+    background-image:
+            linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)),
+            url("assets/dark-green-texture.jpg");
+    transform: translateY(1px);
+}
+
+.btn-icon{
+    height: 30px;
+}
+
+.try-btn{
+    background-image: url("assets/light-green-texture.jpg");
+    background-size: cover;
+    background-position: center;
+    padding: 20px 70px;
+    border-radius: 30px;
+    text-decoration: none;
+    box-shadow: darkslategrey 2px 2px 5px;
+    color: rgba(67, 67, 67, 1);
+    font-weight: bolder;
+    font-size: 20px;
+    margin-top: 10px;
+    opacity: 0.9;
+    display: inline-flex;
+    align-items: center;
+    gap: 20px;
+    transition: all 0.2s ease;
+}
+
+.try-btn:hover{
+    background-image:
+            linear-gradient(rgba(255,255,255,0.2), rgba(255,255,255,0.2)),
+            url("assets/dark-green-texture.jpg");
+    transform: translateY(-2px);
+}
+
+.try-btn:active{
+    background-image:
+            linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)),
+            url("assets/dark-green-texture.jpg");
+    transform: translateY(1px);
+}
+
+.hero-tagline{
+    font-size: 25px;
+    line-height: 1.5;
+    color: var(--text-dark);
+    max-width: 1200px;
+}
+
+.hero-ages{
+    font-size: 20px;
+}
+
+.theme-cards{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.theme-card{
+    width: 200px;
+    height: 200px;
+    padding: 0;
+    background: none;
+    border: none;
+    cursor: pointer;
+    box-shadow: darkslategrey 2px 2px 5px;
+
+    position: relative;
+    overflow: hidden;
+    border-radius: 25px;
+}
+
+.theme-card img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    box-shadow: darkslategrey 2px 2px 5px;
+    transition: all 0.2s ease;
+}
+
+.card-overlay{
+    position: absolute;
+    inset: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 20px;
+    color: var(--text-dark);
+    font-weight: bolder;
+
+    background-image: url("assets/texture.jpeg");
+    background-size: cover;
+    background-position: center;
+
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.theme-card:hover .card-overlay{
+    opacity: 1;
+}
+
+.theme-card:hover{
+    transform: translateY(-2px);
+}
