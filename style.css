@@ -110,6 +110,12 @@ body {
     font-size: 20px;
 }
 
+.themes-container{
+    max-width: 73vw;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
 .theme-cards{
     display: flex;
     justify-content: center;
@@ -165,4 +171,32 @@ body {
 
 .theme-card:hover{
     transform: translateY(-2px);
+}
+
+.theme-card.active .card-overlay{
+    opacity: 1;
+}
+
+.theme-card:active{
+    transform: translateY(1px);
+}
+
+.theme-box{
+    background-image: url("assets/texture.jpeg");
+    background-size: cover;
+    background-position: center;
+
+    border-radius: 25px;
+    padding: 30px 60px;
+    margin: 20px auto;
+
+
+    display: none;
+}
+
+#theme-text{
+    font-size: 18px;
+    line-height: 1.5;
+    max-width: 95%;
+    margin: 0 auto;
 }
