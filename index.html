@@ -5,8 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Funmory</title>
     <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="game-demo/case1.css">
+    <script src="game-demo/case1.js" defer></script>
+    <script src="script.js" defer></script>
 </head>
 <body>
+
 <section class="hero">
     <div class="hero-content">
         <img src="assets/heading.png" class="hero-logo" alt="Funmory">
@@ -24,7 +29,7 @@
             DOWNLOAD FREE NOW
         </a>
 
-        <a href="#" class="try-btn">
+        <a href="game-demo/case1.html" class="try-btn open-game-btn">
             <img src="assets/play.svg" alt="play">
             Try It Now
         </a>
@@ -36,48 +41,230 @@
     <div class="themes-container">
         <div class="theme-cards">
 
-            <button class="theme-card" data-theme="math">
-                <img src="assets/math.jpg" alt="math">
+            <div class="theme-card" data-theme="math">
+                <div class="theme-card-header">
+                    <img src="assets/math.jpg" alt="math">
+                    <span class="mobile-label">MATH</span>
+                    <span class="chevron">⌄</span>
+                </div>
                 <span class="card-overlay">MATH</span>
-            </button>
+            </div>
 
-            <button class="theme-card" data-theme="letters">
-                <img src="assets/letters.jpg" alt="letters">
+            <div class="theme-card" data-theme="letters">
+                <div class="theme-card-header">
+                    <img src="assets/letters.jpg" alt="letters">
+                    <span class="mobile-label">LETTERS</span>
+                    <span class="chevron">⌄</span>
+                </div>
                 <span class="card-overlay">LETTERS</span>
-            </button>
+            </div>
 
-            <button class="theme-card" data-theme="animals">
-                <img src="assets/animals.jpg" alt="animals">
+            <div class="theme-card" data-theme="animals">
+                <div class="theme-card-header">
+                    <img src="assets/animals.jpg" alt="animals">
+                    <span class="mobile-label">ANIMALS</span>
+                    <span class="chevron">⌄</span>
+                </div>
                 <span class="card-overlay">ANIMALS</span>
-            </button>
+            </div>
 
-            <button class="theme-card" data-theme="geo">
-                <img src="assets/geography.jpg" alt="geography">
+            <div class="theme-card" data-theme="geo">
+                <div class="theme-card-header">
+                    <img src="assets/geography.jpg" alt="geography">
+                    <span class="mobile-label">GEOGRAPHY</span>
+                    <span class="chevron">⌄</span>
+                </div>
                 <span class="card-overlay">GEOGRAPHY</span>
-            </button>
+            </div>
 
-            <button class="theme-card" data-theme="shapes">
-                <img src="assets/shapes.jpg" alt="shapes">
+            <div class="theme-card" data-theme="shapes">
+                <div class="theme-card-header">
+                    <img src="assets/shapes.jpg" alt="shapes">
+                    <span class="mobile-label">SHAPES</span>
+                    <span class="chevron">⌄</span>
+                </div>
                 <span class="card-overlay">SHAPES</span>
-            </button>
+            </div>
 
         </div>
 
         <div id="theme-box" class="theme-box">
-            <p id="theme-text">this is inf about the theme</p>
+            <p id="theme-text"></p>
         </div>
 
     </div>
 </section>
 
-<div id="gameModal" class="modal hidden">
+<section class="designed-for-kids">
+    <h2>Designed With Kids In Mind</h2>
+    <div class="benefits-grid">
+        <div class="benefit-item">
+            <img src="assets/offline.jpg" alt="Works Offline">
+            <p>Works<br>Offline</p>
+        </div>
+        <div class="benefit-item">
+            <img src="assets/adds.jpg" alt="No Ads">
+            <p>No Ads</p>
+        </div>
+        <div class="benefit-item">
+            <img src="assets/purchas.jpg" alt="No Hidden Costs">
+            <p>No Hidden<br>Costs</p>
+        </div>
+    </div>
+</section>
+
+<section class="detailed-features">
+    <div class="features-list">
+        <div class="feature-row">
+            <div class="f-icon">🧠</div>
+            <div class="f-text">
+                <strong>Learn through play</strong><br>Builds memory and focus through interactive games
+            </div>
+        </div>
+        <div class="feature-row">
+            <div class="f-icon">👉</div>
+            <div class="f-text">
+                <strong>Adjustable difficulty</strong><br>Choose the number of cards to match your child's level
+            </div>
+        </div>
+        <div class="feature-row">
+            <div class="f-icon">✈️</div>
+            <div class="f-text">
+                <strong>Play anywhere, anytime</strong><br>Digital and portable, perfect for travel and "on the go" learning
+            </div>
+        </div>
+        <div class="feature-row">
+            <div class="f-icon">👨‍👩‍👧‍👦</div>
+            <div class="f-text">
+                <strong>Play together or independently</strong><br>Children can play alone or with family for shared learning time
+            </div>
+        </div>
+        <div class="feature-row">
+            <div class="f-icon">⭐</div>
+            <div class="f-text">
+                <strong>Keeps kids motivated</strong><br>Star rewards encourage progress and improvement
+            </div>
+        </div>
+        <div class="feature-row">
+            <div class="f-icon">⏱️</div>
+            <div class="f-text">
+                <strong>Quick and meaningful play</strong><br>Designed for short sessions that still support learning
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="testimonials">
+    <h2>What Parents Are Saying</h2>
+    <p class="rating">⭐⭐⭐⭐⭐<br>4.9/5 from 1,200+ parents</p>
+
+    <div class="carousel-wrapper">
+        <button class="carousel-btn prev-btn">❮</button>
+
+        <div class="testimonial-cards" id="t-cards-track">
+            <div class="t-card">
+                <p class="stars">⭐⭐⭐⭐⭐</p>
+                <p>"I was looking for something educational, not just another game. My 6 year old actually learns while playing and keeps coming back to it."</p>
+                <p class="author">Parent of a 6 year old</p>
+            </div>
+            <div class="t-card">
+                <p class="stars">⭐⭐⭐⭐⭐</p>
+                <p>"I love that there are no ads or distractions. It's something I feel comfortable letting my kids use on their own."</p>
+                <p class="author">Parent of two</p>
+            </div>
+            <div class="t-card">
+                <p class="stars">⭐⭐⭐⭐⭐</p>
+                <p>"It's a simple game, but you can actually see the progress. My child is more confident with letters and starting to read on their own."</p>
+                <p class="author">Parent of a 5 year old</p>
+            </div>
+            <div class="t-card">
+                <p class="stars">⭐⭐⭐⭐⭐</p>
+                <p>"Perfect for long car rides. The fact that it works fully offline without any pop-ups asking for money is a lifesaver."</p>
+                <p class="author">Parent of a 4 year old</p>
+            </div>
+            <div class="t-card">
+                <p class="stars">⭐⭐⭐⭐⭐</p>
+                <p>"My daughter loves the animal theme! She's learning to match the pictures while building her memory skills. Highly recommend."</p>
+                <p class="author">Parent of a 3 year old</p>
+            </div>
+            <div class="t-card">
+                <p class="stars">⭐⭐⭐⭐⭐</p>
+                <p>"A gentle, calm learning environment. The adjustable difficulty is a brilliant feature as my kids grow and need more challenge."</p>
+                <p class="author">Parent of a 7 year old</p>
+            </div>
+            <div class="t-card">
+                <p class="stars">⭐⭐⭐⭐⭐</p>
+                <p>"Finally, a screen-time activity I don't feel guilty about! Beautiful illustrations and engaging gameplay without overstimulating them."</p>
+                <p class="author">Parent of twins</p>
+            </div>
+        </div>
+
+        <button class="carousel-btn next-btn">❯</button>
+    </div>
+</section>
+
+<section class="faq">
+    <h2>FAQ</h2>
+    <div class="faq-list">
+        <div class="faq-item">
+            <button class="faq-question">
+                Is the game based on educational principles?
+                <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+                <p>Yes. The game uses simple learning methods similar to those used in early childhood education, supporting skill development through play.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question">
+                Can children play on their own?
+                <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+                <p>Yes. The game is simple and safe to use, so children can play independently or together with family.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question">
+                Does it work without internet?
+                <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+                <p>Yes. The game works fully offline, so children can play anytime without Wi-Fi.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div class="footer-top">
+        <div class="brand-info">
+            <h3>FUNMORY</h3>
+            <p>Learning through play</p>
+        </div>
+        <div class="contact-info">
+            <p>📧 contact@funmory.com</p>
+            <p>📍 Copenhagen, Denmark</p>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>No ads • No in-app purchases • Works offline</p>
+        <p>© 2026 Funmory</p>
+    </div>
+</footer>
+
+<div id="game-modal" class="modal-hidden">
     <div class="modal-content">
-        <button class="close-modal">x</button>
-        <canvas id="case1-demo-canvas" width="620" height="420" aria-label="Funmory"></canvas>
+        <button id="close-game-btn" class="close-btn" aria-label="Close Game">X</button>
+        <canvas id="case1-demo-canvas" width="620" height="420" aria-label="Memory – Learn and grow"></canvas>
     </div>
 </div>
 
-<script src="script.js"></script>
-<script src="game-demo/case1.js"></script>
+<button id="back-to-top" class="back-to-top-btn" aria-label="Back to top">
+    ↑
+</button>
+
 </body>
 </html>
