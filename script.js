@@ -2,18 +2,6 @@ const cards = document.querySelectorAll(".theme-card");
 const box = document.getElementById("theme-box");
 const text = document.getElementById("theme-text");
 const themesContainer = document.querySelector(".themes-container");
-const modal=document.getElementById("gameModal")
-const openBtn=document.querySelector(".try-btn")
-const closeBtn=document.querySelector(".close-modal")
-
-closeBtn.addEventListener("click", () => {
-    modal.classList.add("hidden")
-})
-
-openBtn.addEventListener("click", (e) =>{
-    e.preventDefault();
-    modal.classList.remove("hidden");
-})
 
 let activeTheme = null;
 
