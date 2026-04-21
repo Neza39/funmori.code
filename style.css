@@ -238,10 +238,7 @@ h2 {
 .benefit-item img {
     width: 90px;
     height: 90px;
-    background: #fff;
     border-radius: 25px;
-    padding: 15px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
     margin-bottom: 15px;
 }
 
@@ -502,6 +499,16 @@ footer {
     .hero{
         height: auto;
         padding-top: 60px;
+        padding-bottom: 30px;
+    }
+
+    .hero-logo {
+        height: 100px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        margin-bottom: 30px;
     }
 
     .themes-container {
@@ -584,16 +591,29 @@ footer {
         text-align: left;
     }
 
+    .benefits-grid {
+        gap: 10px;
+        flex-wrap: nowrap;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .benefit-item {
+        font-size: 14px;
+        flex: 1;
+    }
+
+    .benefit-item img {
+        width: 70px;
+        height: 70px;
+    }
+
     .detailed-features {
         padding: 30px 20px;
     }
 
     .features-list {
         grid-template-columns: 1fr;
-    }
-
-    .hero-buttons {
-        flex-direction: column;
     }
 
     .t-card {
