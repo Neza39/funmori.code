@@ -10,7 +10,6 @@ body {
     background-position: center 80%;
     background-attachment: fixed;
     margin: 0;
-    padding: 20px;
 }
 
 h2 {
@@ -498,8 +497,9 @@ footer {
 @media (max-width: 768px) {
     .hero{
         height: auto;
-        padding-top: 60px;
-        padding-bottom: 30px;
+        padding-top: 40px;
+        padding-bottom: 10px;
+        padding: 20px;
     }
 
     .hero-logo {
