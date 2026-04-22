@@ -469,7 +469,7 @@ footer {
     background-size: cover;
     background-blend-mode: multiply;
     color: white;
-    border: 3px solid var(--text-dark);
+    border: 3px solid #173215;
     border-radius: 40px 20px 50px 30px / 30px 50px 20px 40px;
     font-size: 28px;
     font-weight: bold;
