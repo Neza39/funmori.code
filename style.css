@@ -495,7 +495,6 @@ footer {
 }
 
 @media (max-width: 768px) {
-
     .hero{
         height: auto;
         padding-top: 40px;
@@ -620,9 +619,10 @@ footer {
     }
 
     .t-card {
-        flex: 0 0 85%;
+        flex: 0 0 70%;
     }
 
-    .carousel-btn.prev-btn { left: 0px; }
-    .carousel-btn.next-btn { right: 0px; }
+    .carousel-btn {
+        display: none;
+    }
 }
